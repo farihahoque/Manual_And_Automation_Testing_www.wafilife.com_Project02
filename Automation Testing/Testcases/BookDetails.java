@@ -2,13 +2,10 @@ package Testcases;
 
 import Pages.HomePage;
 import Pages.LoginPage;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utilities.DriverSetup;
 
-import java.time.Duration;
 
 public class BookDetails extends DriverSetup {
     LoginPage SignUp= new LoginPage();
