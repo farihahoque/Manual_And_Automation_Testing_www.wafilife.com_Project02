@@ -5,6 +5,10 @@ This project showcases a comprehensive approach to software testing by integrati
 - IntelliJ IDE
 - Selenium
 - Google sheet
+
+  ### Programming Language used
+- Java
+  
 ## Project Structure
 - Automation Testings: Contains the Selenium WebDriver test scripts.
 - Manual Testing: Directory for manual test case documentation.
