@@ -1,5 +1,5 @@
 # Manual_And_Automation_Testing_www.wafilife.com_Project02
-This project showcases a comprehensive approach to software testing by integrating both automated and manual testing methodologies. It leverages Selenium, a powerful tool for web application automation, alongside Allure Reports for detailed test reporting. Additionally, the project includes manually executed test cases to complement the automation efforts, ensuring thorough validation of the application under test.
+This project showcases a comprehensive approach to software testing by integrating both automated and manual testing methodologies of "https://www.wafilife.com/". It leverages Selenium, a powerful tool for web application automation, alongside Allure Reports for detailed test reporting. Additionally, the project includes manually executed test cases to complement the automation efforts, ensuring thorough validation of the application under test.
 
 ## Technology Used
 - IntelliJ IDE
