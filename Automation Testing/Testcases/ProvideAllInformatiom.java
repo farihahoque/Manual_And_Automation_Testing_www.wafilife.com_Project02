@@ -37,7 +37,7 @@ public class ProvideAllInformatiom extends DriverSetup {
 
     @Test
     public void Provide_All_Info_With_Bkash0rRocketORNogod(){
-        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(100));
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(1000));
         WebElement AreaSelect = wait.until(ExpectedConditions.elementToBeClickable(checkout.Area));
         Actions actions = new Actions(getDriver());
         Select select = new Select(AreaSelect);
@@ -55,12 +55,12 @@ public class ProvideAllInformatiom extends DriverSetup {
 
     @Test
     public void Provide_All_Info_With_Cardpay(){
-        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(100));
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(1000));
         WebElement AreaSelect = wait.until(ExpectedConditions.elementToBeClickable(checkout.Area));
         Actions actions = new Actions(getDriver());
         Select select = new Select(AreaSelect);
         select.selectByVisibleText("মিরপুর-১");
-        actions.sendKeys(Keys.ARROW_DOWN).build().perform();
+        //actions.sendKeys(Keys.ARROW_DOWN).build().perform();
         checkout.writeOnElement(checkout.Address,"block:E,Mirpur 1");
         actions.scrollByAmount(0, 300).build().perform();
         checkout.writeOnElement(checkout.OtherInfo,"Only deliver after 3 pm");
@@ -72,9 +72,10 @@ public class ProvideAllInformatiom extends DriverSetup {
     @Test
     public void Provide_All_Info_SendToOtherAddress(){
         Actions actions = new Actions(getDriver());
+        actions.scrollByAmount(0, 200).build().perform();
         checkout.clickOnElement(checkout.NagadPay);
         actions.scrollByAmount(0, 600).build().perform();
-        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(100));
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(1000));
         checkout.clickOnElement(checkout.ShipToDifferentAddress);
         checkout.writeOnElement(checkout.OtherAddressName,"Naba");
         checkout.writeOnElement(checkout.Otherphone,"02125678934");
