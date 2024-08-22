@@ -33,7 +33,6 @@ public class ClickOrder_ClickOrderFinish extends DriverSetup {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(1000));
         wait.until(ExpectedConditions.elementToBeClickable(bookdetails.ClickOrder)).click();
         wait.until(ExpectedConditions.elementToBeClickable(bookdetails.FinishOrder)).click();
-        //bookdetails.clickOnElement(bookdetails.ClickOrder);
-        //bookdetails.clickOnElement(bookdetails.FinishOrder);
+     
     }
 }
